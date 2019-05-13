@@ -1,0 +1,48 @@
+<!--
+Copyright © 2019 Charles Moss
+
+This file is part of Pew.
+
+Pew is free software: you can redistribute it and/or modify it under the terms
+of the GNU General Public License as published by the Free Software Foundation,
+either version 3 of the License, or (at your option) any later version.
+
+Pew is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+PURPOSE.  See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with
+Pew.  If not, see <https://www.gnu.org/licenses/>.
+-->
+<Page x:Class="Pew.AboutPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      mc:Ignorable="d"
+      d:DesignWidth="800"
+      d:DesignHeight="450"
+      Title="PewAboutPage"
+      >
+	<FlowDocumentReader>
+		<FlowDocument IsHyphenationEnabled="True" IsOptimalParagraphEnabled="True">
+			<Paragraph>
+				Pew is free software: you can redistribute it and/or modify it under the terms
+				of the GNU General Public License as published by the Free Software Foundation,
+				either version 3 of the License, or (at your option) any later version.
+			</Paragraph>
+			<Paragraph>
+				Pew is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+				without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+				PURPOSE.  See the GNU General Public License for more details.
+			</Paragraph>
+			<Paragraph>
+				You should have received a copy of the GNU General Public License along with
+				Pew.  If not, see
+				<Hyperlink NavigateUri="https://www.gnu.org/licenses/">
+					https://www.gnu.org/licenses/
+				</Hyperlink>.
+			</Paragraph>
+		</FlowDocument>
+	</FlowDocumentReader>
+</Page>

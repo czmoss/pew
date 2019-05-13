@@ -1,0 +1,35 @@
+[*]
+charset = utf-8
+end_of_line = lf
+indent_style = tab
+insert_final_newline = true
+
+# Let's give Windows users CRLF in the application config file.
+[{*.exe.config,App.config}]
+end_of_line = crlf
+
+[*.cs]
+csharp_new_line_before_open_brace = none
+
+# Play nice with "EditorConfig Language Service" Visual Studio extension.
+[.editorconfig]
+end_of_line = crlf
+
+# Play nice with Visual Studio XML files.
+[{*.csproj,*.resx,Settings.settings,packages.config}]
+charset = utf-8-bom
+end_of_line = crlf
+indent_size = 2
+indent_style = space
+insert_final_newline = false
+
+# Play nice with Visual Studio Solution files.
+[*.sln]
+end_of_line = crlf
+
+# Play nice with auto-generated files.
+[{Resources.Designer.cs,Settings.Designer.cs}]
+charset = utf-8-bom
+end_of_line = crlf
+indent_size = 4
+indent_style = space

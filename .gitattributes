@@ -1,0 +1,22 @@
+# The "EditorConfig Language Service" extension for Visual Studio,
+# when sorting lines in .editorconfig, writes its output with CRLF.
+.editorconfig	eol=crlf
+
+*.cs	diff=csharp
+
+# Visual Studio writes these files with CRLF.
+*.csproj	eol=crlf
+*.resx	eol=crlf
+*.sln	eol=crlf
+
+# App.config gets renamed in build output to <assembly name>.exe.config.
+# Its contents are left (¿mostly?) unchanged.
+# So, since we're writing a Windows program,
+# let's use Windows's CRLF end-of-line sequence.
+App.config	eol=crlf
+
+# More files Visual Studio writes with CRLF
+Resources.Designer.cs	eol=crlf
+Settings.Designer.cs	eol=crlf
+Settings.settings	eol=crlf
+packages.config	eol=crlf
